@@ -34,8 +34,8 @@ endif
 all: webapp server ## Build server and webapp.
 
 prebuild: ## Run prebuild actions (install dependencies etc.).
-	cd webapp; npm install
-	cd mattermost-plugin/webapp; npm install
+	cd webapp; CPPFLAGS="-DPNG_ARM_NEON_OPT=0" npm install
+	cd mattermost-plugin/webapp; CPPFLAGS="-DPNG_ARM_NEON_OPT=0" npm install
 
 ci: webapp-ci server-test ## Simulate CI, locally.
 
