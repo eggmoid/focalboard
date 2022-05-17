@@ -1,4 +1,4 @@
-# Focalboard
+# Focalboard - arm64 cpu를 위한 fork
 
 ![CI Status](https://github.com/mattermost/focalboard/actions/workflows/ci.yml/badge.svg)
 ![CodeQL](https://github.com/mattermost/focalboard/actions/workflows/codeql-analysis.yml/badge.svg)
@@ -7,6 +7,12 @@
 <a href="https://translate.mattermost.com/engage/focalboard/">
 <img src="https://translate.mattermost.com/widgets/focalboard/-/svg-badge.svg" alt="Translation status" />
 </a>
+
+## 안내 사항
+
+* 보드 공유를 위해서 config.json에서 `enablePublicSharedBoards`를 `true`로 변경
+
+## 원본
 
 Like what you see? :eyes: Give us a GitHub Star! :star:
 
